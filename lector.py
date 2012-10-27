@@ -1,10 +1,7 @@
-import SO
 
 sistema=None
 class lector:    
     @staticmethod
-    def leer(args):
-        global sistema
-        sistema=args
-        f = open("/Users/nletelier/code/SO/example.txt")
-        sistema.makeProcess(f.readlines())
+    def leer(sistema,queue1, queue3):
+        f = open("example.txt")
+        sistema.makeProcess(f.readlines(),queue1,queue3)
